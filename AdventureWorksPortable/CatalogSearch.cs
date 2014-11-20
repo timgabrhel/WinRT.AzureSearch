@@ -15,6 +15,7 @@
 using System;
 using System.Globalization;
 using System.Net.Http;
+using AdventureWorksPortable.Models;
 using CatalogCommon;
 
 namespace AdventureWorksWeb
@@ -39,7 +40,7 @@ namespace AdventureWorksWeb
             }
         }
 
-        public dynamic Search(string searchText, string sort, string color, string category, double? priceFrom, double? priceTo)
+        public SearchResult Search(string searchText, string sort, string color, string category, double? priceFrom, double? priceTo)
         {
             string search = "&search=" + Uri.EscapeDataString(searchText);
             string facets = "&facet=color&facet=categoryName&facet=listPrice,values:10|25|100|500|1000|2500";
@@ -51,9 +52,9 @@ namespace AdventureWorksWeb
             HttpResponseMessage response = AzureSearchHelper.SendSearchRequest(_httpClient, HttpMethod.Get, uri);
             AzureSearchHelper.EnsureSuccessfulSearchResponse(response);
 
-            return AzureSearchHelper.DeserializeJson<dynamic>(response.Content.ReadAsStringAsync().Result);
+            return AzureSearchHelper.DeserializeJson<SearchResult>(response.Content.ReadAsStringAsync().Result);
         }
-
+        
         public dynamic Suggest(string searchText)
         {
             // we still need a default filter to exclude discontinued products from the suggestions

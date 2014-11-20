@@ -1,4 +1,5 @@
-﻿@model dynamic
+﻿
+@model AdventureWorksPortable.Models.SearchResult
 
 @{
     ViewBag.Title = "Search";
@@ -27,25 +28,25 @@
                 <div class="col-md-4">
                     Colors:
                     <ul>
-                        @foreach (var colorFacet in Model["@search.facets"].color)
+                        @foreach (var colorFacet in Model.Facets.Colors)
                         {
-                            <li><a href="#" onclick="document.getElementById('color').value='@colorFacet.value'; document.forms[0].submit(); return false;">@colorFacet.value</a> (@colorFacet.count)</li>
+                            <li><a href="#" onclick="document.getElementById('color').value='@colorFacet.Value'; document.forms[0].submit(); return false;">@colorFacet.Value</a> (@colorFacet.Count)</li>
                         }
                     </ul>
                     Categories:
                     <ul>
-                        @foreach (var categoryFacet in Model["@search.facets"].categoryName)
+                        @foreach (var categoryFacet in Model.Facets.Categories)
                         {
-                            <li><a href="#" onclick="document.getElementById('category').value='@categoryFacet.value'; document.forms[0].submit(); return false;">@categoryFacet.value</a> (@categoryFacet.count)</li>
+                            <li><a href="#" onclick="document.getElementById('category').value='@categoryFacet.Value'; document.forms[0].submit(); return false;">@categoryFacet.Value</a> (@categoryFacet.Count)</li>
                         }
                     </ul>
                     Prices:
                     <ul>
-                        @foreach (var priceFacet in Model["@search.facets"].listPrice)
+                        @foreach (var priceFacet in Model.Facets.ListPrices)
                         {
-                            if (priceFacet.count > 0)
+                            if (priceFacet.Count > 0)
                             {
-                                <li><a href="#" onclick="document.getElementById('priceFrom').value=@(priceFacet.from ?? 0); document.getElementById('priceTo').value=@(priceFacet.to ?? 0); document.forms[0].submit(); return false;">@(priceFacet.from ?? 0) - @(priceFacet.to ?? "more")</a> (@priceFacet.count)</li>
+                                <li><a href="#" onclick="document.getElementById('priceFrom').value=@(priceFacet.From ?? 0); document.getElementById('priceTo').value=@(priceFacet.To ?? 0); document.forms[0].submit(); return false;">@(priceFacet.From ?? 0) - @(priceFacet.To == null ? "more" : priceFacet.To.ToString())</a> (@priceFacet.Count)</li>
                             }
                         }
                     </ul>
@@ -57,14 +58,14 @@
                         <a href="#" onclick="document.getElementById('sort').value='listPrice'; document.forms[0].submit(); return false;">by list price</a>
                         <a href="#" onclick="document.getElementById('sort').value='color'; document.forms[0].submit(); return false;">by color</a>
                     </p>
-                    <p>Found @Model["@odata.count"] products in the catalog</p>
+                    <p>Found @Model.Count products in the catalog</p>
 
                     <ul>
-                        @foreach (var product in Model.value)
+                        @foreach (var product in Model.Products)
                         {
                             <li>
-                                <h3><b>@product.name</b></h3>
-                                price: @product.listPrice, color: @product.color, weight: @product.weight, size: @product.size
+                                <h3><b>@product.Name</b></h3>
+                                price: @product.ListPrice, color: @product.Color, weight: @product.Weight, size: @product.Size
                             </li>
                         }
                     </ul>

@@ -1,0 +1,276 @@
+﻿{  
+   "@odata.context":"https://timsadvworks.search.windows.net/indexes('catalog')/$metadata#docs(productID,name,productNumber,color,standardCost,listPrice,size,weight,discontinuedDate,categoryName,modelName,description)",
+   "@odata.count":294,
+   "@search.facets":{  
+      "color@odata.type":"#Collection(Microsoft.Azure.Search.V2014_07_31_Preview.QueryResultFacet)",
+      "color":[  
+         {  
+            "count":89,
+            "value":"Black"
+         },
+         {  
+            "count":38,
+            "value":"Red"
+         },
+         {  
+            "count":36,
+            "value":"Yellow"
+         },
+         {  
+            "count":35,
+            "value":"Silver"
+         },
+         {  
+            "count":26,
+            "value":"Blue"
+         },
+         {  
+            "count":8,
+            "value":"Multi"
+         },
+         {  
+            "count":7,
+            "value":"Silver/Black"
+         },
+         {  
+            "count":4,
+            "value":"White"
+         },
+         {  
+            "count":1,
+            "value":"Grey"
+         }
+      ],
+      "categoryName@odata.type":"#Collection(Microsoft.Azure.Search.V2014_07_31_Preview.QueryResultFacet)",
+      "categoryName":[  
+         {  
+            "count":43,
+            "value":"Road Bikes"
+         },
+         {  
+            "count":33,
+            "value":"Road Frames"
+         },
+         {  
+            "count":32,
+            "value":"Mountain Bikes"
+         },
+         {  
+            "count":28,
+            "value":"Mountain Frames"
+         },
+         {  
+            "count":22,
+            "value":"Touring Bikes"
+         },
+         {  
+            "count":18,
+            "value":"Touring Frames"
+         },
+         {  
+            "count":14,
+            "value":"Wheels"
+         },
+         {  
+            "count":11,
+            "value":"Tires and Tubes"
+         },
+         {  
+            "count":9,
+            "value":"Saddles"
+         },
+         {  
+            "count":8,
+            "value":"Jerseys"
+         }
+      ],
+      "listPrice@odata.type":"#Collection(Microsoft.Azure.Search.V2014_07_31_Preview.QueryResultFacet)",
+      "listPrice":[  
+         {  
+            "count":13,
+            "to":10.0
+         },
+         {  
+            "count":11,
+            "from":10.0,
+            "to":25.0
+         },
+         {  
+            "count":66,
+            "from":25.0,
+            "to":100.0
+         },
+         {  
+            "count":68,
+            "from":100.0,
+            "to":500.0
+         },
+         {  
+            "count":50,
+            "from":500.0,
+            "to":1000.0
+         },
+         {  
+            "count":73,
+            "from":1000.0,
+            "to":2500.0
+         },
+         {  
+            "count":13,
+            "from":2500.0
+         }
+      ]
+   },
+   "value":[  
+      {  
+         "@search.score":1.0,
+         "productID":"680",
+         "name":"HL Road Frame - Black, 58",
+         "productNumber":"FR-R92B-58",
+         "color":"Black",
+         "standardCost":1059.31,
+         "listPrice":1431.5,
+         "size":"58",
+         "weight":1016.04,
+         "discontinuedDate":null,
+         "categoryName":"Road Frames",
+         "modelName":"HL Road Frame",
+         "description":"Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"706",
+         "name":"HL Road Frame - Red, 58",
+         "productNumber":"FR-R92R-58",
+         "color":"Red",
+         "standardCost":1059.31,
+         "listPrice":1431.5,
+         "size":"58",
+         "weight":1016.04,
+         "discontinuedDate":null,
+         "categoryName":"Road Frames",
+         "modelName":"HL Road Frame",
+         "description":"Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"707",
+         "name":"Sport-100 Helmet, Red",
+         "productNumber":"HL-U509-R",
+         "color":"Red",
+         "standardCost":13.0863,
+         "listPrice":34.99,
+         "size":null,
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Helmets",
+         "modelName":"Sport-100",
+         "description":"Universal fit, well-vented, lightweight , snap-on visor."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"708",
+         "name":"Sport-100 Helmet, Black",
+         "productNumber":"HL-U509",
+         "color":"Black",
+         "standardCost":13.0863,
+         "listPrice":34.99,
+         "size":null,
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Helmets",
+         "modelName":"Sport-100",
+         "description":"Universal fit, well-vented, lightweight , snap-on visor."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"709",
+         "name":"Mountain Bike Socks, M",
+         "productNumber":"SO-B909-M",
+         "color":"White",
+         "standardCost":3.3963,
+         "listPrice":9.5,
+         "size":"M",
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Socks",
+         "modelName":"Mountain Bike Socks",
+         "description":"Combination of natural and synthetic fibers stays dry and provides just the right cushioning."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"710",
+         "name":"Mountain Bike Socks, L",
+         "productNumber":"SO-B909-L",
+         "color":"White",
+         "standardCost":3.3963,
+         "listPrice":9.5,
+         "size":"L",
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Socks",
+         "modelName":"Mountain Bike Socks",
+         "description":"Combination of natural and synthetic fibers stays dry and provides just the right cushioning."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"711",
+         "name":"Sport-100 Helmet, Blue",
+         "productNumber":"HL-U509-B",
+         "color":"Blue",
+         "standardCost":13.0863,
+         "listPrice":34.99,
+         "size":null,
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Helmets",
+         "modelName":"Sport-100",
+         "description":"Universal fit, well-vented, lightweight , snap-on visor."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"712",
+         "name":"AWC Logo Cap",
+         "productNumber":"CA-1098",
+         "color":"Multi",
+         "standardCost":6.9223,
+         "listPrice":8.99,
+         "size":null,
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Caps",
+         "modelName":"Cycling Cap",
+         "description":"Traditional style with a flip-up brim; one-size fits all."
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"713",
+         "name":"Long-Sleeve Logo Jersey, S",
+         "productNumber":"LJ-0192-S",
+         "color":"Multi",
+         "standardCost":38.4923,
+         "listPrice":49.99,
+         "size":"S",
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Jerseys",
+         "modelName":"Long-Sleeve Logo Jersey",
+         "description":"Unisex long-sleeve AWC logo microfiber cycling jersey"
+      },
+      {  
+         "@search.score":1.0,
+         "productID":"714",
+         "name":"Long-Sleeve Logo Jersey, M",
+         "productNumber":"LJ-0192-M",
+         "color":"Multi",
+         "standardCost":38.4923,
+         "listPrice":49.99,
+         "size":"M",
+         "weight":null,
+         "discontinuedDate":null,
+         "categoryName":"Jerseys",
+         "modelName":"Long-Sleeve Logo Jersey",
+         "description":"Unisex long-sleeve AWC logo microfiber cycling jersey"
+      }
+   ]
+}
