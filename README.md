@@ -1,4 +1,4 @@
-{Title}
+Azure Search powered WinRT Apps
 =============
 
-{Description}
+You can see this blog post [here](http://timgabrhel.com/blog/azure-search-powered-winrt-apps-part-1
